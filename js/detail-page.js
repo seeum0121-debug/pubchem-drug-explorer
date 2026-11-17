@@ -13,7 +13,7 @@ const sections = [
   ['경고 · 먼저 확인하세요','warnings'],
   ['이상반응 (ADR)','adverse_reactions'],
   ['작용 기전 설명','mechanism_of_action'],
-  ['작용 기전 분류 (설명 아님)','openfda.pharm_class_moa'],
+  ['작용 기전 분류','openfda.pharm_class_moa'],
   ['임상 약리 설명','clinical_pharmacology'],
   ['약리 효과 분류 (설명 아님)','openfda.pharm_class_pe']
 ];
