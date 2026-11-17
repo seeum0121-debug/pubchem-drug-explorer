@@ -1,3 +1,4 @@
+import {requestBlob} from './http.js';
 export const $ = selector => document.querySelector(selector);
 export function el(tag, text, className) {
   const node = document.createElement(tag);
@@ -17,13 +18,30 @@ export function field(parent, title, value) {
   row.append(el('dt', title), el('dd', value === undefined || value === null || value === '' || (Array.isArray(value) && !value.length) ? '자료 없음' : Array.isArray(value) ? value.join(' · ') : value));
   parent.append(row);
 }
-export function compoundCard(compound) {
+export function compoundCard(compound, { signal } = {}) {
   const card = el('article', undefined, 'card');
   card.append(el('h2', compound.Title || '성분명 자료 없음'));
   const image = el('img'); image.alt = `CID ${compound.CID} 화학 구조`;
-  image.src = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${compound.CID}/PNG`;
   image.width = 240; image.height = 180;
-  image.addEventListener('error', () => image.replaceWith(el('p', '구조 이미지 조회 실패')));
+  let objectUrl;
+  const cleanup = () => {
+    if (objectUrl) { URL.revokeObjectURL(objectUrl); objectUrl = undefined; }
+    image.removeEventListener('load', cleanup);
+    image.removeEventListener('error', failed);
+    signal?.removeEventListener('abort', cleanup);
+  };
+  const failed = () => {
+    cleanup();
+    if (!signal?.aborted && image.isConnected) image.replaceWith(el('p', '구조 이미지 조회 실패'));
+  };
+  image.addEventListener('load', cleanup, { once: true });
+  image.addEventListener('error', failed, { once: true });
+  signal?.addEventListener('abort', cleanup, { once: true });
+  requestBlob(`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${compound.CID}/PNG`, { signal }).then(blob => {
+    if (signal?.aborted || !image.isConnected) { cleanup(); return; }
+    objectUrl = URL.createObjectURL(blob);
+    image.src = objectUrl;
+  }).catch(failed);
   card.append(image);
   const fields = el('dl');
   field(fields, 'CID', compound.CID); field(fields, '분자식', compound.MolecularFormula); field(fields, '분자량', compound.MolecularWeight);

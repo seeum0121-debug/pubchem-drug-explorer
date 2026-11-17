@@ -28,7 +28,7 @@ function apiError(message, status, url) {
   return error;
 }
 
-async function fetchJSON(url, signal) {
+async function fetchData(url, signal, format) {
   for (let attempt = 0; attempt <= 2; attempt += 1) {
     await wait(Math.max(0, 1000 - (Date.now() - lastStart)), signal);
     lastStart = Date.now();
@@ -42,7 +42,7 @@ async function fetchJSON(url, signal) {
     try {
       if (signal.aborted) throw abortError();
       response = await fetch(url, { signal: controller.signal, credentials: 'omit' });
-      body = await response.text();
+      body = response.ok && format === 'blob' ? await response.blob() : await response.text();
     } catch (error) {
       if (signal.aborted) throw abortError();
       if (timedOut) throw apiError('API request timed out after 20 seconds.', 0, url);
@@ -75,6 +75,7 @@ async function fetchJSON(url, signal) {
       error.code = code;
       throw error;
     }
+    if (format === 'blob') return body;
     let data;
     try { data = JSON.parse(body); } catch { throw apiError('API returned invalid JSON.', response.status, url); }
     if (!data || typeof data !== 'object' || data.error || data.Fault) {
@@ -85,20 +86,20 @@ async function fetchJSON(url, signal) {
   }
 }
 
-export function requestJSON(url, { signal } = {}) {
+function request(url, format, { signal } = {}) {
   if (signal?.aborted) return Promise.reject(abortError());
   let parsed;
   try { parsed = new URL(url); } catch { return Promise.reject(new Error('Invalid API URL.')); }
   if (parsed.protocol !== 'https:' || !['pubchem.ncbi.nlm.nih.gov', 'api.fda.gov'].includes(parsed.hostname) || parsed.username || parsed.password || parsed.port) {
     return Promise.reject(new Error('API URL is not an approved HTTPS endpoint.'));
   }
-  const key = parsed.href;
+  const key = `${format}:${parsed.href}`;
   if (cache.has(key)) return Promise.resolve(cache.get(key));
   let entry = pending.get(key);
   if (!entry) {
     const controller = new AbortController();
     entry = { controller, users: 0, promise: null };
-    const work = queue.then(() => fetchJSON(key, controller.signal));
+    const work = queue.then(() => fetchData(parsed.href, controller.signal, format));
     queue = work.catch(() => {});
     entry.promise = work.then(data => {
       if (controller.signal.aborted) throw abortError();
@@ -128,4 +129,12 @@ export function requestJSON(url, { signal } = {}) {
     entry.promise.then(data => finish(resolve, data), error => finish(reject, error));
     if (signal?.aborted) onAbort();
   });
+}
+
+export function requestJSON(url, options = {}) {
+  return request(url, 'json', options);
+}
+
+export function requestBlob(url, { signal } = {}) {
+  return request(url, 'blob', { signal });
 }

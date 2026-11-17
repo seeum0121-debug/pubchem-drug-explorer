@@ -33,7 +33,7 @@
 
 ## Fixture와 모의 통합 검증 (실제 제공자 성공과 별개)
 
-`npm test`: 23/23 통과. 정확한 연결·순서 섞인 배열·두 실제 NDC만 생성·SPL/set 불일치·식별 누락·염·복합제 보류·동일 키 충돌·제형/경로 누락·완전 동일 중복·세대 취소·잘못된 CID·요청 중복/캐시·소비자별 취소·재시도/간격·Retry-After·404 오류코드·잘못된 JSON·네트워크·시간 초과를 검증했습니다.
+`npm test`: 27/27 통과. 정확한 연결·순서 섞인 배열·두 실제 NDC만 생성·SPL/set 불일치·식별 누락·염·복합제 보류·동일 키 충돌·제형/경로 누락·완전 동일 중복·세대 취소·잘못된 CID·요청 중복/캐시·소비자별 취소·재시도/간격·Retry-After·404 오류코드·잘못된 JSON·네트워크·시간 초과를 검증했습니다.
 
 `node tests/browser.js`: 8개 브라우저 시나리오 통과. fixture 실행, 잘못된 CID, 번역 미지원 후 영문 유지, 한글 후보 수정/확인, 빠른 재검색, 상세 새로고침 확인, 악성 HTML textContent 처리, 공유 라벨의 A→B 전환 후 늦은 번역 차단. [자동화 기록](evidence/browser-adversarial.json), [화면](evidence/browser-adversarial.png). 이 suite의 번역은 의도적으로 모의이며 실제 번역 증거는 위에 따로 있습니다.
 
@@ -43,6 +43,14 @@
 
 - 저장소: https://github.com/seeum0121-debug/pubchem-drug-explorer
 - 사이트: https://seeum0121-debug.github.io/pubchem-drug-explorer/
-- `node tools/pages-probe.js`: 공개 HTTPS 사이트에서 실제 Chrome 한글 3종 후보 번역→확인→PubChem 결과→각 화학 상세, 뒤로 가기, 직접 상세 접근/새로고침, 아스피린 제품/제형/경로/정확 라벨, en→ko 번역을 재실행했습니다. 7개 관측 단계 성공, pageerror 없음. [공개 사이트 자동화 기록](evidence/pages.json), [공개 사이트 화면](evidence/pages.png).
+- `node tools/pages-probe.js`: 공개 HTTPS 사이트에서 실제 Chrome 한글 3종 후보 번역→확인→PubChem 결과→각 화학 상세, 뒤로 가기, 직접 상세 접근/새로고침, 세 성분 각각의 제품/제형/경로/정확 라벨, en→ko 번역을 재실행했습니다. 9개 관측 단계 성공, pageerror 없음. [공개 사이트 자동화 기록](evidence/pages.json), [공개 사이트 화면](evidence/pages.png).
 - 새 계정·새 인증정보·유료 서비스 없이 기존 계정을 사용했습니다. Git 작성자 설정은 커밋 명령에만 적용했으며 전역 Git 설정을 변경하지 않았습니다.
 - 외부 제공자 데이터 및 Chrome 모델 가용성은 이후 바뀔 수 있습니다. 모든 의약품의 연결·번역 성공이나 의학적 정확성을 보장하지 않습니다.
+
+## 경계 리뷰 수정 및 추가 증거
+
+- R1: 직접 img.src 요청이 공통 큐를 우회하는 문제를 발견하여 JSON/PNG 모두 하나의 직렬 전송 계층을 사용하도록 수정했습니다. 캐시·중복 제거·취소·시간 제한·재시도 정책을 공유하고 object URL은 로드/오류/취소 때 해제합니다.
+- C1: 어댑터에서 제공하지 않는 CanonicalSMILES 대체 경로를 제거했습니다.
+- R2: 추가 페이지 조회 실패 후 동일 offset을 재시도할 수 있으며 이전 제품/선택이 유지됩니다.
+- `node tests/image-browser.js`: 5개 추가 시나리오 통과. 실제 dispatch 이후 이미지 취소, 혼합 JSON/PNG 간격, 시간 초과, 디코딩 실패/URL 해제, 상세 확인 중 이미지 유지 및 페이지 offset 0→1(실패)→1(성공)을 검증했습니다. [기록](evidence/image-browser.json), [화면](evidence/image-browser.png).
+- 공개 세 성분 제품 선택 근거: aspirin NDC59726-065; acetaminophen NDC63941-519 / set_id0005aafa-08f8-4990-a54d-cc097195708f / label.id ee8e3aa2-8550-41c7-9911-0723b3fb2f87; ibuprofen NDC59779-438 / set_id00653b7c-7099-487e-9a01-e89781c21323 / label.id4bd1345d-d116-426e-825f-bbf29381746a. 정확한 제형·경로·성분/함량·원문·한국어 번역은 pages.json에 보존합니다.

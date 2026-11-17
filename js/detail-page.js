@@ -4,6 +4,8 @@ import {linkProducts} from './identity.js';
 import {translate} from './translator.js';
 import {$,el,field,link,compoundCard,status,validCid,Generation} from './render.js';
 const requests = new Generation(), selection = new Generation();
+const compoundLifetime = new AbortController();
+window.addEventListener('pagehide', () => compoundLifetime.abort(), {once:true});
 let compound, evidence, skip = 0;
 const products = new Map();
 let labels = [], ndcs = [], lookupHeld = [];
@@ -69,7 +71,12 @@ async function loadProducts() {
     for(const item of [...cumulative.held,...lookupHeld]) $('#held').append(el('p',typeof item==='string'?item:JSON.stringify(item)));
     skip=result.nextSkip;$('#more').hidden=skip===null || skip===undefined;
     status($('#status'),`${products.size}개 연결 제품. ${cumulative.held.length+lookupHeld.length}건 보류. ${products.size?'제품을 선택하세요.':'연결 근거가 충분한 제품이 없습니다.'}`);
-  } catch(error) {if(request.current()) status($('#status'),error.message,true);}
+  } catch(error) {
+    if(request.current()) {
+      status($('#status'),error.message,true);
+      $('#more').hidden=!(skip > 0);
+    }
+  }
   finally {if(request.current())$('#confirm-compound').disabled=false;}
 }
 $('#confirm-compound').addEventListener('click',()=>{skip=0;labels=[];ndcs=[];lookupHeld=[];products.clear();$('#products').replaceChildren();$('#held').replaceChildren();selection.next();$('#label').replaceChildren();loadProducts();});
@@ -78,9 +85,9 @@ const cid=new URLSearchParams(location.search).get('cid');
 if(!validCid(cid)) status($('#status'),'유효하지 않은 CID입니다. 검색 화면에서 성분을 선택하세요.',true);
 else {
   try {
-    compound=await getCompound(cid);
-    const card=compoundCard(compound), fields=el('dl');
-    for(const [title,value] of [['IUPAC명',compound.IUPACName],['SMILES',compound.ConnectivitySMILES ?? compound.CanonicalSMILES],['XLogP',compound.XLogP],['조회 시각',compound.retrievedAt]])field(fields,title,value);
+    compound=await getCompound(cid,{signal:compoundLifetime.signal});
+    const card=compoundCard(compound,{signal:compoundLifetime.signal}), fields=el('dl');
+    for(const [title,value] of [['IUPAC명',compound.IUPACName],['SMILES',compound.ConnectivitySMILES],['XLogP',compound.XLogP],['조회 시각',compound.retrievedAt]])field(fields,title,value);
     card.append(fields);$('#compound').append(card);$('#confirm-compound').hidden=false;
     status($('#status'),'CID와 구조를 확인하세요. 직접 접근·새로고침에서도 제품 조회 전 확인이 필요합니다.');
   } catch(error) {status($('#status'),error.message,true);}

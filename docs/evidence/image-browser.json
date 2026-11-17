@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "browser-automation",
+  "browser": "157.0.8103.79",
+  "observedAt": "2026-11-17T14:38:01.148Z",
+  "steps": [
+    {
+      "action": "Mixed JSON and two image requests serialize at one-second intervals; loaded object URLs revoked",
+      "verdict": "passed",
+      "startGapsMs": [
+        1011,
+        1001
+      ]
+    },
+    {
+      "action": "Already dispatched obsolete image is aborted and never receives a blob URL",
+      "verdict": "passed"
+    },
+    {
+      "action": "Image timeout is visible instead of silent success",
+      "verdict": "passed"
+    },
+    {
+      "action": "Decode failure revokes allocated URL and preserves explicit image error",
+      "verdict": "passed"
+    },
+    {
+      "action": "Product confirmation retains pending detail image; failed page retry retains selected product",
+      "verdict": "passed",
+      "requestedOffsets": [
+        "0",
+        "1",
+        "1"
+      ]
+    }
+  ],
+  "status": "passed"
+}

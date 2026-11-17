@@ -10,7 +10,7 @@ async function search(name, request) {
     $('#results').replaceChildren();
     status($('#status'), compounds.length ? `${compounds.length}개 후보 — CID와 구조를 확인한 후 선택하세요.` : '검색 결과 없음. 철자 또는 영문 성분명을 확인하세요.');
     for (const compound of compounds) {
-      const card = compoundCard(compound);
+      const card = compoundCard(compound, {signal:request.signal});
       const confirm = el('a','성분·구조 확인 완료 → 상세 보기','button');
       confirm.href = `./detail.html?cid=${encodeURIComponent(compound.CID)}`;
       card.append(confirm); $('#results').append(card);

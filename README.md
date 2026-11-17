@@ -28,6 +28,8 @@ Node.js 24 이상에서 `npm ci`, `npm run serve` 실행 후 http://127.0.0.1:41
 
 - `npm test`: fixture 기반 식별/요청 테스트.
 - `node tests/browser.js`: Chrome 브라우저 모의 API/모의 번역 adversarial 테스트.
+- `node tests/image-browser.js`: JSON/PNG 공통 큐, 이미지 취소·시간 초과·URL 정리, 다음 페이지 실패 후 재시도 테스트.
+- `node tools/pages-probe.js`: 공개 Pages에서 세 성분의 실제 구조·번역·제품 선택 검증.
 - `/tests/index.html`: 브라우저 fixture 테스트 화면.
 - `node tools/probe.js`: 실제 Chrome CORS/API/Translator 가용성 확인.
 - `node tools/live-app.js`: 실제 API 기반 검색·제품 연결 확인.
