@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "browser-automation",
+  "steps": [
+    {
+      "action": "Product gesture automatically starts shared model with activation; rapid switch keeps B; originals and provenance collapsed",
+      "verdict": "passed"
+    },
+    {
+      "action": "Automatic download failure explicit with usable original text",
+      "verdict": "passed"
+    },
+    {
+      "action": "Subsequent product gesture retries rejected model successfully",
+      "verdict": "passed"
+    }
+  ],
+  "status": "passed"
+}

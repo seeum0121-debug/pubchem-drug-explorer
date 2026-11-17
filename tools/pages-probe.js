@@ -20,8 +20,8 @@ try{
   await page.waitForFunction(()=>document.querySelector('#compound img')?.naturalWidth>0,{},{timeout:60000});
   await page.locator('#confirm-compound').click();await page.locator('#products button').first().waitFor({timeout:180000});await page.locator('#products button').first().click();
   const selectionKey=await page.locator('#label').getAttribute('data-selection-key');assert.equal(JSON.parse(selectionKey).length,3);
-  await page.locator('#label button').first().click();await page.waitForFunction(()=>[...document.querySelectorAll('.translation-text')].some(x=>x.textContent.trim()),{},{timeout:180000});
-  report.steps.push({action:'Exact product/form/route/label plus native Korean label translation on HTTPS Pages',input:name,cid,selectionKey,result:await page.locator('#label').innerText(),verdict:'passed'});
+  await page.waitForFunction(()=>document.querySelector('.translation-state')?.textContent==='한국어로 표시했습니다.',{},{timeout:180000});
+  report.steps.push({action:'Exact product/form/route/label plus native Korean label translation on HTTPS Pages',input:name,cid,selectionKey,result:await page.locator('#label').innerText(),identity:await page.locator('#selected-evidence').textContent(),verdict:'passed'});
   await page.screenshot({path:`docs/evidence/pages-${cid}.png`,fullPage:true});
   if(cid===2244)await page.screenshot({path:'docs/evidence/pages.png',fullPage:true});
   await page.goBack();await page.locator('#query').waitFor();
