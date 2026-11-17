@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kind": "browser-automation",
   "browser": "157.0.8103.79",
-  "observedAt": "2026-11-17T14:48:47.055Z",
+  "observedAt": "2026-11-17T15:17:25.911Z",
   "steps": [
     {
       "action": "Browser fixture contracts",

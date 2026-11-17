@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "kind": "browser-automation",
   "browser": "157.0.8103.79",
-  "observedAt": "2026-11-17T14:49:07.908Z",
+  "observedAt": "2026-11-17T15:17:33.725Z",
   "steps": [
     {
       "action": "Mixed JSON and two image requests serialize at one-second intervals; loaded object URLs revoked",
       "verdict": "passed",
       "startGapsMs": [
-        1001,
-        1002
+        999,
+        1004
       ]
     },
     {

@@ -1,17 +1,30 @@
 {
   "schemaVersion": 1,
   "kind": "browser-automation",
+  "observedAt": "2026-11-17T15:24:06.770Z",
   "steps": [
     {
-      "action": "Product gesture automatically starts shared model with activation; rapid switch keeps B; originals and provenance collapsed",
+      "action": "Pending model shared during rapid switch; activation true; all present sections translate; selected state and bottom evidence",
       "verdict": "passed"
     },
     {
-      "action": "Automatic download failure explicit with usable original text",
+      "action": "In-flight old translation cannot replace newly selected product",
       "verdict": "passed"
     },
     {
-      "action": "Subsequent product gesture retries rejected model successfully",
+      "action": "Stale rejected translation cannot mark new product failed or expand its originals",
+      "verdict": "passed"
+    },
+    {
+      "action": "Download failure explicitly shown and original automatically expanded",
+      "verdict": "passed"
+    },
+    {
+      "action": "Next product gesture retries rejected model",
+      "verdict": "passed"
+    },
+    {
+      "action": "Per-section translation failures never claim success and expose original",
       "verdict": "passed"
     }
   ],

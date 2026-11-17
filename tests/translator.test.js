@@ -1,6 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 const fresh=()=>import(`../js/translator.js?test=${Math.random()}`);
+test('empty output fails explicitly and is not cached',async()=>{
+ const original=globalThis.Translator;let calls=0;
+ globalThis.Translator={create:async()=>({translate:async()=>++calls===1?'  ':'실제 결과'})};
+ try{const m=await fresh();await assert.rejects(m.translate('text','en','ko'),/비어/);assert.equal(await m.translate('text','en','ko'),'실제 결과');}finally{globalThis.Translator=original;}
+});
 test('create starts synchronously; same pair shares pending promise; translations are sequential and cached',async()=>{
  const original=globalThis.Translator;let creates=0,release,active=0,max=0,calls=0;
  globalThis.Translator={create:()=>{creates++;return new Promise(r=>release=()=>r({translate:async text=>{calls++;active++;max=Math.max(max,active);await new Promise(r=>setTimeout(r,10));active--;return '한국어 '+text;}}));}};

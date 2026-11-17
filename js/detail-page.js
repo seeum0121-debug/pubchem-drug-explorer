@@ -10,12 +10,12 @@ let compound, evidence, skip = 0;
 const products = new Map();
 let labels = [], ndcs = [], lookupHeld = [];
 const sections = [
+  ['경고 · 먼저 확인하세요','warnings'],
+  ['이상반응 (ADR)','adverse_reactions'],
   ['작용 기전 설명','mechanism_of_action'],
   ['작용 기전 분류 (설명 아님)','openfda.pharm_class_moa'],
   ['임상 약리 설명','clinical_pharmacology'],
-  ['약리 효과 분류 (설명 아님)','openfda.pharm_class_pe'],
-  ['이상반응 (ADR)','adverse_reactions'],
-  ['경고 (ADR과 별개)','warnings']
+  ['약리 효과 분류 (설명 아님)','openfda.pharm_class_pe']
 ];
 function source(parent,title,url) {if(url) parent.append(link(title,url));}
 function select(product) {
@@ -27,6 +27,8 @@ function select(product) {
   const {ndc,label,selectionKey} = product;
   const current = () => request.current() && root.dataset.selectionKey===selectionKey;
   root.dataset.selectionKey = selectionKey;
+  for(const button of $('#products').children) button.setAttribute('aria-pressed',String(button.dataset.selectionKey===selectionKey));
+  root.setAttribute('aria-busy','true');
   root.append(el('h2',ndc.brand_name || ndc.generic_name || '제품명 자료 없음'),el('p','미국 openFDA · 선택한 NDC 제품에 연결된 정확한 SPL 라벨'));
   const details = el('dl');
   for(const [title,value] of [['제품명',ndc.brand_name],['일반명',ndc.generic_name],['전체 성분 / 함량',ndc.active_ingredients?.map(x=>`${x.name ?? '자료 없음'} / ${x.strength ?? '자료 없음'}`)],['제형',ndc.dosage_form],['경로',ndc.route]]) field(details,title,value);
@@ -47,8 +49,11 @@ function select(product) {
     const translated = el('p','한국어 자동 번역 대기 중…','translation-text');
     const original = el('details');original.append(el('summary','영문 원문 보기'),el('p',text,'source-text'));
     section.append(translated,original);root.append(section);
-    pending.push({title,text,translated});
+    pending.push({title,text,translated,original});
   }
+  root.tabIndex = -1;
+  root.focus({preventScroll:true});
+  root.scrollIntoView({block:'start'});
   void (async()=>{
     try {
       await prepared;
@@ -56,22 +61,30 @@ function select(product) {
     } catch(error) {
       if(current()) {
         status(state,`한국어 번역 실패: ${error.message} 영문 원문을 펼쳐 확인하세요.`,true);
-        for(const item of pending)status(item.translated,'한국어 번역을 사용할 수 없습니다. 아래 영문 원문을 확인하세요.',true);
+        for(const item of pending) {
+          status(item.translated,'한국어 번역을 사용할 수 없습니다. 영문 원문을 확인하세요.',true);
+          item.original.open=true;
+        }
+        root.setAttribute('aria-busy','false');
       }
       return;
     }
     let failures = 0;
-    for(const {title,text,translated} of pending) {
+    for(const {title,text,translated,original} of pending) {
       if(!current())return;
       try {
         const result=await translate(text,'en','ko',message=>{if(current())status(state,`${title}: ${message}`);});
         if(current())status(translated,result);
       } catch(error) {
         failures++;
-        if(current())status(translated,`한국어 번역 실패: ${error.message} 아래 영문 원문을 확인하세요.`,true);
+        if(current()) {
+          status(translated,`한국어 번역 실패: ${error.message} 영문 원문을 확인하세요.`,true);
+          original.open=true;
+        }
       }
     }
     if(current())status(state,failures?`한국어 번역 ${failures}개 항목 실패 — 해당 영문 원문을 확인하세요.`:pending.length?'한국어로 표시했습니다.':'번역할 원문 자료가 없습니다.',failures>0);
+    if(current())root.setAttribute('aria-busy','false');
   })();
 }
 async function loadProducts() {
@@ -93,6 +106,8 @@ async function loadProducts() {
       products.set(product.selectionKey,product);
       const n=product.ndc;
       const button=el('button',undefined,'product');
+      button.dataset.selectionKey=product.selectionKey;
+      button.setAttribute('aria-pressed',String(product.selectionKey===activeKey));
       button.append(el('strong',n.brand_name || n.generic_name || '제품명 자료 없음','product-name'),el('span',n.active_ingredients?.map(x=>`${x.name || '성분 자료 없음'} ${x.strength || '함량 자료 없음'}`).join(' + ') || '성분 자료 없음','product-ingredients'),el('span',`${n.dosage_form || '제형 자료 없음'} · ${n.route?.join(', ') || '경로 자료 없음'}`,'product-meta'));
       button.addEventListener('click',()=>select(product));$('#products').append(button);
     }

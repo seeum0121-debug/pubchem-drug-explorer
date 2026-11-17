@@ -49,6 +49,7 @@ export async function translate(text, sourceLanguage, targetLanguage, onState = 
     if (cache.has(key)) { onState('준비 완료 (세션 캐시)'); return cache.get(key); }
     onState('번역 중');
     const result = await model.translate(text);
+    if (typeof result !== 'string' || !result.trim()) throw new Error('번역 결과가 비어 있습니다.');
     cache.set(key, result);
     onState('준비 완료');
     return result;

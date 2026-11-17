@@ -1,5 +1,15 @@
 # 실행 검증
 
+## 최신 후속 수정 (2026-11-18 UTC+09:00)
+
+이 절이 아래 과거 실행 기록보다 최신입니다. 이번 변경은 본문 폭/행간·선택 카드·초점 이동·경고 우선 배치, 실패 원문 자동 펼침, 빈 번역 거부입니다. CID–UNII 식별 검증과 하단 출처 접기는 유지했습니다.
+
+- `npm test`: 30/30. `tests/browser.js`: 8, `tests/auto-browser.js`: 6, `tests/image-browser.js`: 5 시나리오 통과.
+- auto-browser는 모의 모델로 pending 공유, 클릭 activation, 진행 중 제품 전환, 다운로드 실패/재시도, 본문 번역 실패를 검증했습니다.
+- `tools/translation-probe.js`: 전체 실패. 최초 실행과 재실행 모두 ko→en 모델 생성 거부를 관찰했습니다. 재실행은 검색 실패와 별도로 실제 aspirin 제품에서 en→ko 자동 번역 완료를 확인했습니다. 오류를 성공 처리하지 않습니다.
+- 실제 모델/실제 API의 최신 화면: [1280px](evidence/readability-desktop.png), [390px](evidence/readability-mobile.png). 좁은 화면의 가로 넘침 검사 통과. 번역문에 의학적 의미 왜곡이 있어 정확성 보장은 불가합니다.
+- 공식 URL 3개 재조회: e약은요 공개 4,730건/엑셀다운로드 표시, 공공데이터포털 무료이나 ServiceKey 필수, 자료실 응답에는 목록만 노출. XLSX 임상 본문·키 없는 자동 연동은 검증하지 못했습니다. 웹 열람권과 API 데이터 이용허락을 구분합니다.
+
 ## 승인·환경
 
 - 승인 계획 SHA256: `96b92989d6018fbf96558adda8e1fae9888541abd3f75f3a047e72ea8fae01d1` (실제 파일 해시 일치 확인).

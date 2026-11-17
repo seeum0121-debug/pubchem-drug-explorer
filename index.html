@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>약물 탐색기 · PubChem</title><link rel="stylesheet" href="./assets/styles.css"></head>
 <body><header><a href="./index.html" class="brand">약물 탐색기</a><span>성분 확인부터 제품 정보까지</span></header><main>
-<h1>궁금한 약의 성분을<br>찾아보세요</h1><p>성분과 구조를 확인하고, 제품별 정보를 한국어로 읽어보세요.</p>
+<h1>궁금한 약의 성분을<br>찾아보세요</h1><p class="intro">성분과 구조를 확인하고, 제품별 정보를 한국어로 읽어보세요.</p><p>미국 제품 자료를 자동 번역합니다. 국내 정보는 <a href="https://nedrug.mfds.go.kr/searchEasyDrug" target="_blank" rel="noopener noreferrer">식약처 e약은요</a>에서 별도로 확인하세요.</p>
 <form id="search-form"><label for="query">성분명</label><div class="input-row"><input id="query" name="query" required maxlength="200" placeholder="예: 아스피린 / aspirin" autocomplete="off"><button>후보 검색</button></div></form>
 <p id="status" role="status" aria-live="polite"></p>
 <section id="translation" hidden class="card"><h2>검색할 성분을 확인하세요</h2><p id="original"></p><label for="candidate">영문 후보 — 성분명이 맞는지 확인하고 수정하세요.</label><input id="candidate" maxlength="200"><button id="confirm-translation" type="button">이 성분으로 검색</button></section>
