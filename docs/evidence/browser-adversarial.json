@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "browser-automation",
+  "browser": "157.0.8103.79",
+  "observedAt": "2026-11-17T13:54:04.907Z",
+  "steps": [
+    {
+      "action": "Browser fixture contracts",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/tests/"
+    },
+    {
+      "action": "Invalid CID never offers product connection",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/detail.html?cid=1e3"
+    },
+    {
+      "action": "Unsupported native translator keeps English input available",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "action": "Korean candidate is editable and explicit confirmation required (mock model)",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "action": "Rapid search cancels stale result",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "action": "Detail refresh requires explicit CID confirmation",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/detail.html?cid=2244"
+    },
+    {
+      "action": "Shared label creates only actual NDC products and escaped malicious text",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/detail.html?cid=2244"
+    },
+    {
+      "action": "Late translation cannot overwrite different product sharing label",
+      "verdict": "passed",
+      "url": "http://127.0.0.1:4173/detail.html?cid=2244"
+    }
+  ],
+  "status": "passed"
+}

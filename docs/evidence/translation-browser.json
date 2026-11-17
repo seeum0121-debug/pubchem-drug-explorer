@@ -1,0 +1,30 @@
+{
+  "browser": "157.0.8103.79",
+  "observedAt": "2026-11-17T13:57:43.846Z",
+  "mode": "isolated headless Chrome; component updates/background networking enabled",
+  "results": [
+    {
+      "input": "아스피린",
+      "status": "번역은 화합물 식별 근거가 아닙니다. 후보를 확인하세요.",
+      "candidate": "Aspirin",
+      "pubchem": "Aspirin\nCID\n2244\n분자식\nC9H8O4\n분자량\n180.16\nPubChem 원자료성분·구조 확인 완료 → 상세 보기"
+    },
+    {
+      "input": "아세트아미노펜",
+      "status": "번역은 화합물 식별 근거가 아닙니다. 후보를 확인하세요.",
+      "candidate": "acetaminophen",
+      "pubchem": "Acetaminophen\nCID\n1983\n분자식\nC8H9NO2\n분자량\n151.16\nPubChem 원자료성분·구조 확인 완료 → 상세 보기"
+    },
+    {
+      "input": "이부프로펜",
+      "status": "번역은 화합물 식별 근거가 아닙니다. 후보를 확인하세요.",
+      "candidate": "Ibuprofen",
+      "pubchem": "Ibuprofen, (+-)-\nCID\n3672\n분자식\nC13H18O2\n분자량\n206.28\nPubChem 원자료성분·구조 확인 완료 → 상세 보기"
+    }
+  ],
+  "englishToKorean": {
+    "selectionKey": "[\"59726-065\",\"0058175f-3474-40c3-a046-6cfaec86d84b\",\"008ee85b-5cac-45a6-a857-a828f8125175\"]",
+    "source": "Cyclooxygenase Inhibitors [MoA]",
+    "translated": "시클로옥시게나제 억제제 [MOA]"
+  }
+}

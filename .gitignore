@@ -1,0 +1,4 @@
+node_modules/
+.gjc/
+test-results/
+playwright-report/

@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>약물 탐색기 · PubChem</title><link rel="stylesheet" href="./assets/styles.css"></head>
+<body><header><a href="./index.html" class="brand">MOLECULE / 약물 탐색기</a><span>PubChem × openFDA</span></header><main>
+<p class="eyebrow">SOURCE-FIRST DRUG EXPLORER</p><h1>성분에서 시작하는<br>약물 정보 탐색</h1><p>한글 또는 영문으로 검색하고, 화학 구조와 성분을 확인하세요.</p>
+<form id="search-form"><label for="query">성분명</label><div class="input-row"><input id="query" name="query" required maxlength="200" placeholder="예: 아스피린 / aspirin" autocomplete="off"><button>후보 검색</button></div></form>
+<p id="status" role="status" aria-live="polite"></p>
+<section id="translation" hidden class="card"><h2>영문 번역 후보 확인</h2><p id="original"></p><label for="candidate">기계번역 후보 — 성분명이 맞는지 확인하고 수정하세요.</label><input id="candidate" maxlength="200"><button id="confirm-translation" type="button">이 후보로 PubChem 검색</button></section>
+<section id="results" aria-label="성분 후보"></section>
+</main><footer>미국 자료 · 정보 탐색용이며 의료 조언이 아닙니다. 제품·제형·라벨은 성분 확인 후 별도 선택합니다.<br>한국어 번역: PC Chrome 기본 Translator, 최초 모델 다운로드 필요. 미지원 시 영어 조회 가능.</footer><script type="module" src="./js/search-page.js"></script></body></html>

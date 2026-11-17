@@ -1,0 +1,1455 @@
+{
+  "browser": "157.0.8103.79",
+  "observedAt": "2026-11-17T13:52:50.342Z",
+  "steps": [
+    {
+      "action": "Search aspirin",
+      "result": "Aspirin\nCID\n2244\n분자식\nC9H8O4\n분자량\n180.16\nPubChem 원자료성분·구조 확인 완료 → 상세 보기"
+    },
+    {
+      "action": "Confirm CID and fetch product page",
+      "result": "13개 연결 제품. 7건 보류. 제품을 선택하세요.",
+      "products": "Low Dose Aspirin · NDC 59726-065 · TABLET, COATED · ORAL · ASPIRIN 81 mg/1 · label 008ee85b-5cac-45a6-a857-a828f8125175\nRapidol Aspirin · NDC 55758-363 · TABLET, COATED · ORAL · ASPIRIN 325 mg/1 · label 55f373b7-0c70-b19c-e063-6294a90a82d2\nAspirin Low Dose · NDC 17856-3086 · TABLET, DELAYED RELEASE · ORAL · ASPIRIN 81 mg/1 · label 385229c2-9b6a-56ca-e063-6394a90aa5b7\nCARDIASPIRIN PROTECT · NDC 69729-104 · TABLET, COATED · ORAL · ASPIRIN 81 mg/1 · label 5f7813f7-58fd-b705-e063-6294a90a73ab\nHEB Effervescent Pain Relief · NDC 37808-861 · TABLET, EFFERVESCENT · ORAL · ASPIRIN 325 mg/1 · label 285f424d-b50c-c734-e063-6394a90a9680\nEnteric Coated Aspirin · NDC 53943-081 · TABLET, DELAYED RELEASE · ORAL · ASPIRIN 325 mg/1 · label 249d869c-d17e-ebcb-e063-6394a90a94b6\nAspirin Enteric Coated · NDC 83139-372 · TABLET · ORAL · ASPIRIN 81 mg/1 · label c8032d71-2485-4ab4-a20f-153fc3dc6281\nAspirin · NDC 63941-118 · TABLET, COATED · ORAL · ASPIRIN 325 mg/1 · label 45b30e56-4555-140e-e063-6294a90ad270\nAspirin · NDC 83324-066 · TABLET, FILM COATED · ORAL · ASPIRIN 325 mg/1 · label 735cdb9a-650e-4ce5-b168-2db27144c316\nASPIRIN · NDC 81522-018 · TABLET, COATED · ORAL · ASPIRIN 325 mg/1 · label 24998221-f349-47cd-e063-6294a90a4de3\nBayer Chewable - Aspirin Regimen Low Dose Aspirin Cherry Flavored · NDC 0280-2090 · TABLET, CHEWABLE · ORAL · ASPIRIN 81 mg/1 · label 4526b3d0-3666-afe5-e063-6294a90af3ab\nAlka-Seltzer Original Flavor · NDC 0280-0087 · TABLET, EFFERVESCENT · ORAL · ASPIRIN 325 mg/1 · label 452648e2-82a6-84f5-e063-6394a90a6df1\nBayer Low Dose · NDC 0280-2100 · TABLET · ORAL · ASPIRIN 81 mg/1 · label 4526b594-84b4-b981-e063-6294a90a1aed"
+    },
+    {
+      "action": "Select exact linked product",
+      "result": "Low Dose Aspirin\n\n미국 openFDA · 선택한 NDC 제품에 연결된 정확한 SPL 라벨\n\nNDC\n59726-065\n제품명\nLow Dose Aspirin\n일반명\nAspirin\n전체 성분 / 함량\nASPIRIN / 81 mg/1\n제형\nTABLET, COATED\n경로\nORAL\nSPL set_id\n0058175f-3474-40c3-a046-6cfaec86d84b\n라벨 버전 id\n008ee85b-5cac-45a6-a857-a828f8125175\n원자료 날짜 (effective_time)\n20240416\n제품 조회 시각\n2026-11-17T13:52:54.765Z\n라벨 조회 시각\n2026-11-17T13:52:54.434Z\nNDC 제품 원자료SPL 라벨 원자료\n필드별 출처·식별 근거\n작용 기전 설명\n원본 필드: mechanism_of_action · label 008ee85b-5cac-45a6-a857-a828f8125175\n\n자료 없음 — 다른 항목이나 다른 제품의 설명으로 대체하지 않습니다.\n\n작용 기전 분류 (설명 아님)\n원본 필드: openfda.pharm_class_moa · label 008ee85b-5cac-45a6-a857-a828f8125175\n영문 원문\n\nCyclooxygenase Inhibitors [MoA]\n\n한국어 기계번역\n\n임상 약리 설명\n원본 필드: clinical_pharmacology · label 008ee85b-5cac-45a6-a857-a828f8125175\n\n자료 없음 — 다른 항목이나 다른 제품의 설명으로 대체하지 않습니다.\n\n약리 효과 분류 (설명 아님)\n원본 필드: openfda.pharm_class_pe · label 008ee85b-5cac-45a6-a857-a828f8125175\n영문 원문\n\nDecreased Prostaglandin Production [PE]\n\nDecreased Platelet Aggregation [PE]\n\n한국어 기계번역\n\n이상반응 (ADR)\n원본 필드: adverse_reactions · label 008ee85b-5cac-45a6-a857-a828f8125175\n\n자료 없음 — 다른 항목이나 다른 제품의 설명으로 대체하지 않습니다.\n\n경고 (ADR과 별개)\n원본 필드: warnings · label 008ee85b-5cac-45a6-a857-a828f8125175\n영문 원문\n\nWarnings Reye's syndrome : Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. When using this product, if changes in behavior with nausea and vomiting occur, consult a doctor because these symptoms could be an early sign of Reye's syndrome, a rare but serious illness. Allergy alert : Aspirin may cause a severe allergic reaction, which may include: hives facial swelling shock asthma (wheezing) Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you: are age 60 or older have had stomach ulcers or bleeding problems take a blood thinning (anticoagulant) or steroid drug take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others] have 3 or more alcoholic drinks every day while using this product take more or for a longer time than directed Do not use if you are allergic to aspirin or any other pain reliever/fever reducer. if you have ever had an allergic reaction to his product or any of its ingredients Ask a doctor before use if stomach bleeding warning applies to you you have a history of stomach problems, such as heartburn you have high blood pressure, heart disease, liver cirrhosis, or kidney disease you are taking a diuretic you have asthma Ask a doctor or pharmacist before use if you are taking a prescription drug for gout diabetes arthritis Stop use and ask a doctor if an allergic reaction occurs. Seek medical help right away. you experience any of the following signs of stomach bleeding: feel faint vomit blood have bloody or black stool have stomach pain that does not get better pain gets worse or lasts more than 10 days redness or swelling is present ringing in the ears or loss of hearing occurs new symptoms occur These could be signs of a serious condition If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use aspirin during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away.\n\n한국어 기계번역"
+    }
+  ],
+  "errors": [],
+  "positive": {
+    "products": [
+      {
+        "selectionKey": "[\"59726-065\",\"0058175f-3474-40c3-a046-6cfaec86d84b\",\"008ee85b-5cac-45a6-a857-a828f8125175\"]",
+        "ndc": {
+          "product_ndc": "59726-065",
+          "generic_name": "Aspirin",
+          "labeler_name": "P & L Development, LLC",
+          "brand_name": "Low Dose Aspirin",
+          "active_ingredients": [
+            {
+              "name": "ASPIRIN",
+              "strength": "81 mg/1"
+            }
+          ],
+          "finished": true,
+          "packaging": [
+            {
+              "package_ndc": "59726-065-30",
+              "description": "300 TABLET, COATED in 1 BOTTLE, PLASTIC (59726-065-30)",
+              "marketing_start_date": "20210813",
+              "sample": false
+            }
+          ],
+          "listing_expiration_date": "20271231",
+          "openfda": {
+            "manufacturer_name": [
+              "P & L Development, LLC"
+            ],
+            "rxcui": [
+              "308416"
+            ],
+            "spl_set_id": [
+              "0058175f-3474-40c3-a046-6cfaec86d84b"
+            ],
+            "is_original_packager": [
+              true
+            ],
+            "upc": [
+              "0359726443012"
+            ],
+            "nui": [
+              "N0000000160",
+              "N0000008836",
+              "M0001335",
+              "N0000175722",
+              "N0000175578",
+              "N0000008832"
+            ],
+            "pharm_class_moa": [
+              "Cyclooxygenase Inhibitors [MoA]"
+            ],
+            "pharm_class_pe": [
+              "Decreased Prostaglandin Production [PE]",
+              "Decreased Platelet Aggregation [PE]"
+            ],
+            "pharm_class_cs": [
+              "Anti-Inflammatory Agents, Non-Steroidal [CS]"
+            ],
+            "pharm_class_epc": [
+              "Nonsteroidal Anti-inflammatory Drug [EPC]",
+              "Platelet Aggregation Inhibitor [EPC]"
+            ],
+            "unii": [
+              "R16CO5Y76E"
+            ]
+          },
+          "marketing_category": "OTC MONOGRAPH DRUG",
+          "dosage_form": "TABLET, COATED",
+          "spl_id": "008ee85b-5cac-45a6-a857-a828f8125175",
+          "product_type": "HUMAN OTC DRUG",
+          "route": [
+            "ORAL"
+          ],
+          "marketing_start_date": "20210813",
+          "product_id": "59726-065_008ee85b-5cac-45a6-a857-a828f8125175",
+          "application_number": "M013",
+          "brand_name_base": "Low Dose Aspirin",
+          "pharm_class": [
+            "Anti-Inflammatory Agents",
+            "Non-Steroidal [CS]",
+            "Cyclooxygenase Inhibitors [MoA]",
+            "Decreased Platelet Aggregation [PE]",
+            "Decreased Prostaglandin Production [PE]",
+            "Nonsteroidal Anti-inflammatory Drug [EPC]",
+            "Platelet Aggregation Inhibitor [EPC]"
+          ],
+          "_sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+          "_retrievedAt": "2026-11-17T13:53:14.766Z"
+        },
+        "label": {
+          "spl_product_data_elements": [
+            "Low Dose Aspirin Aspirin ASPIRIN ASPIRIN D&C YELLOW NO. 10 CROSCARMELLOSE SODIUM LACTOSE MONOHYDRATE CELLULOSE, MICROCRYSTALLINE METHACRYLIC ACID SILICON DIOXIDE POLACRILIN POTASSIUM SODIUM LAURYL SULFATE TALC TITANIUM DIOXIDE TRIETHYL CITRATE POLYETHYLENE GLYCOL 6000 SOYBEAN POLYVINYL ALCOHOL, UNSPECIFIED P"
+          ],
+          "active_ingredient": [
+            "Active ingredient (in each tablet) Aspirin 81 mg (NSAID)* *nonsteroidal anti-inflammatory drug"
+          ],
+          "purpose": [
+            "Purpose Pain reliever"
+          ],
+          "indications_and_usage": [
+            "Uses for the temporary relief of minor aches and pains or as recommended by your doctor. Because of its delayed action, this product will not provide fast relief of headaches or other symptoms needing immediate relief. ask your doctor about other uses for safety coated 81 mg aspirin"
+          ],
+          "warnings": [
+            "Warnings Reye's syndrome : Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. When using this product, if changes in behavior with nausea and vomiting occur, consult a doctor because these symptoms could be an early sign of Reye's syndrome, a rare but serious illness. Allergy alert : Aspirin may cause a severe allergic reaction, which may include: hives facial swelling shock asthma (wheezing) Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you: are age 60 or older have had stomach ulcers or bleeding problems take a blood thinning (anticoagulant) or steroid drug take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others] have 3 or more alcoholic drinks every day while using this product take more or for a longer time than directed Do not use if you are allergic to aspirin or any other pain reliever/fever reducer. if you have ever had an allergic reaction to his product or any of its ingredients Ask a doctor before use if stomach bleeding warning applies to you you have a history of stomach problems, such as heartburn you have high blood pressure, heart disease, liver cirrhosis, or kidney disease you are taking a diuretic you have asthma Ask a doctor or pharmacist before use if you are taking a prescription drug for gout diabetes arthritis Stop use and ask a doctor if an allergic reaction occurs. Seek medical help right away. you experience any of the following signs of stomach bleeding: feel faint vomit blood have bloody or black stool have stomach pain that does not get better pain gets worse or lasts more than 10 days redness or swelling is present ringing in the ears or loss of hearing occurs new symptoms occur These could be signs of a serious condition If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use aspirin during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away."
+          ],
+          "do_not_use": [
+            "Do not use if you are allergic to aspirin or any other pain reliever/fever reducer. if you have ever had an allergic reaction to his product or any of its ingredients"
+          ],
+          "ask_doctor": [
+            "Ask a doctor before use if stomach bleeding warning applies to you you have a history of stomach problems, such as heartburn you have high blood pressure, heart disease, liver cirrhosis, or kidney disease you are taking a diuretic you have asthma"
+          ],
+          "ask_doctor_or_pharmacist": [
+            "Ask a doctor or pharmacist before use if you are taking a prescription drug for gout diabetes arthritis"
+          ],
+          "stop_use": [
+            "Stop use and ask a doctor if an allergic reaction occurs. Seek medical help right away. you experience any of the following signs of stomach bleeding: feel faint vomit blood have bloody or black stool have stomach pain that does not get better pain gets worse or lasts more than 10 days redness or swelling is present ringing in the ears or loss of hearing occurs new symptoms occur These could be signs of a serious condition"
+          ],
+          "pregnancy_or_breast_feeding": [
+            "If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use aspirin during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery."
+          ],
+          "keep_out_of_reach_of_children": [
+            "Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away."
+          ],
+          "dosage_and_administration": [
+            "Directions drink a full glass of water with each dose adults and children 12 years and over: take 4 to 8 tablets every 4 hours not to exceed 48 tablets in 24 hours unless directed by a doctor children under 12 years: consult a doctor"
+          ],
+          "storage_and_handling": [
+            "Other information store between 15-30ºC (59-86ºF)"
+          ],
+          "inactive_ingredient": [
+            "Inactive ingredients croscarmellose sodium, D&C yellow #10, lactose monohydrate, methacrylic acid copolymer, microcrystalline cellulose 102 polacrilin potassium, polyethylene glycol 6000, polyvinyl alcohol, purified water, talc, silicon dioxide, sodium lauryl sulfate, soybean, titanium dioxide, triethyl citrate"
+          ],
+          "questions": [
+            "Questions or comments? Call 1-877-753-3935 Monday-Friday 9AM-5PM EST"
+          ],
+          "package_label_principal_display_panel": [
+            "Principal Display Panel Compare to the active ingredient in Bayer® Low Dose Aspirin† EASY OPEN CAP Low Dose Aspirin 81 mg Pain reliever (NSAID) ≠aspirin regimen ≠safety coated THIS PACKAGE NOT FOR HOUSEHOLDS WITH YOUNG CHILDREN enteric coated tablets ≠≠Coating helps protect against stomach upset †This product is not manufactured or distributed by Bayer HealthCare LLC, distributor of Bayer® Low Dose Aspirin. ≠Talk to your doctor or other healthcare provider before using this product for your heart. Aspirin is not right for everyone. TAMPER EVIDENT: DO NOT USE IF PRINTED SAFETY SEAL UNDER CAP IS BROKEN OR MISSING Distributed by: PL Developments 200 Hicks Street Westbury, NY 11590",
+            "Product Label READYinCASE Low Dose Aspirin 81 mg Aspirin 81 mg (NSAID)* *nonsteroidal anti-inflammatory drug"
+          ],
+          "set_id": "0058175f-3474-40c3-a046-6cfaec86d84b",
+          "id": "008ee85b-5cac-45a6-a857-a828f8125175",
+          "effective_time": "20240416",
+          "version": "3",
+          "openfda": {
+            "application_number": [
+              "M013"
+            ],
+            "brand_name": [
+              "Low Dose Aspirin"
+            ],
+            "generic_name": [
+              "ASPIRIN"
+            ],
+            "manufacturer_name": [
+              "P & L Development, LLC"
+            ],
+            "product_ndc": [
+              "59726-065"
+            ],
+            "product_type": [
+              "HUMAN OTC DRUG"
+            ],
+            "route": [
+              "ORAL"
+            ],
+            "substance_name": [
+              "ASPIRIN"
+            ],
+            "rxcui": [
+              "308416"
+            ],
+            "spl_id": [
+              "008ee85b-5cac-45a6-a857-a828f8125175"
+            ],
+            "spl_set_id": [
+              "0058175f-3474-40c3-a046-6cfaec86d84b"
+            ],
+            "package_ndc": [
+              "59726-065-30"
+            ],
+            "is_original_packager": [
+              true
+            ],
+            "upc": [
+              "0359726443012"
+            ],
+            "nui": [
+              "N0000000160",
+              "N0000008836",
+              "M0001335",
+              "N0000175722",
+              "N0000175578",
+              "N0000008832"
+            ],
+            "pharm_class_moa": [
+              "Cyclooxygenase Inhibitors [MoA]"
+            ],
+            "pharm_class_pe": [
+              "Decreased Prostaglandin Production [PE]",
+              "Decreased Platelet Aggregation [PE]"
+            ],
+            "pharm_class_cs": [
+              "Anti-Inflammatory Agents, Non-Steroidal [CS]"
+            ],
+            "pharm_class_epc": [
+              "Nonsteroidal Anti-inflammatory Drug [EPC]",
+              "Platelet Aggregation Inhibitor [EPC]"
+            ],
+            "unii": [
+              "R16CO5Y76E"
+            ]
+          },
+          "_sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+          "_retrievedAt": "2026-11-17T13:53:15.839Z"
+        },
+        "sharedLabel": false,
+        "provenance": {
+          "identity": {
+            "cid": 2244,
+            "uniis": [
+              {
+                "value": "R16CO5Y76E",
+                "provider": "FDA Global Substance Registration System (GSRS)",
+                "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2244/JSON?heading=UNII",
+                "annotationUrl": "https://gsrs.ncats.nih.gov/ginas/app/beta/substances/R16CO5Y76E"
+              }
+            ],
+            "provider": "PubChem",
+            "endpoint": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/",
+            "fieldPath": "Record.Section.UNII.Information",
+            "recordId": 2244,
+            "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2244/JSON?heading=UNII",
+            "retrievedAt": "2026-11-17T13:52:53.127Z",
+            "reason": "Exact sourced CID–UNII matches a single-ingredient NDC; product NDC, SPL version, and set ID match the owning label."
+          },
+          "fields": {
+            "ndc.product_ndc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "product_ndc",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.generic_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "generic_name",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.labeler_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "labeler_name",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.brand_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "brand_name",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.active_ingredients": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredients",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.active_ingredients[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredients[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.active_ingredients[0].name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredients[0].name",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.active_ingredients[0].strength": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredients[0].strength",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.finished": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "finished",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging[0].package_ndc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging[0].package_ndc",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging[0].description": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging[0].description",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging[0].marketing_start_date": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging[0].marketing_start_date",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.packaging[0].sample": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "packaging[0].sample",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.listing_expiration_date": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "listing_expiration_date",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.manufacturer_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.manufacturer_name",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.manufacturer_name[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.manufacturer_name[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.rxcui": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.rxcui",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.rxcui[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.rxcui[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.spl_set_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_set_id",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.spl_set_id[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_set_id[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.is_original_packager": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.is_original_packager",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.is_original_packager[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.is_original_packager[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.upc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.upc",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.upc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.upc[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[1]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[2]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[2]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[3]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[3]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[4]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[4]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.nui[5]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[5]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_moa": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_moa",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_moa[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_moa[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_pe": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_pe[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_pe[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe[1]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_cs": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_cs",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_cs[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_cs[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_epc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_epc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.pharm_class_epc[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc[1]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.unii": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.unii",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.openfda.unii[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.unii[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.marketing_category": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "marketing_category",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.dosage_form": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "dosage_form",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.spl_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "spl_id",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.product_type": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "product_type",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.route": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "route",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.route[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "route[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.marketing_start_date": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "marketing_start_date",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.product_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "product_id",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.application_number": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "application_number",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.brand_name_base": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "brand_name_base",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[0]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[1]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[2]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[2]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[3]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[3]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[4]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[4]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[5]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[5]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "ndc.pharm_class[6]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/ndc.json",
+              "sourceUrl": "https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pharm_class[6]",
+              "recordId": "59726-065",
+              "retrievedAt": "2026-11-17T13:53:14.766Z"
+            },
+            "label.spl_product_data_elements": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "spl_product_data_elements",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.spl_product_data_elements[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "spl_product_data_elements[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.active_ingredient": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredient",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.active_ingredient[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "active_ingredient[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.purpose": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "purpose",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.purpose[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "purpose[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.indications_and_usage": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "indications_and_usage",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.indications_and_usage[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "indications_and_usage[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.warnings": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "warnings",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.warnings[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "warnings[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.do_not_use": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "do_not_use",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.do_not_use[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "do_not_use[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.ask_doctor": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "ask_doctor",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.ask_doctor[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "ask_doctor[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.ask_doctor_or_pharmacist": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "ask_doctor_or_pharmacist",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.ask_doctor_or_pharmacist[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "ask_doctor_or_pharmacist[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.stop_use": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "stop_use",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.stop_use[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "stop_use[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.pregnancy_or_breast_feeding": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pregnancy_or_breast_feeding",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.pregnancy_or_breast_feeding[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "pregnancy_or_breast_feeding[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.keep_out_of_reach_of_children": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "keep_out_of_reach_of_children",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.keep_out_of_reach_of_children[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "keep_out_of_reach_of_children[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.dosage_and_administration": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "dosage_and_administration",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.dosage_and_administration[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "dosage_and_administration[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.storage_and_handling": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "storage_and_handling",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.storage_and_handling[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "storage_and_handling[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.inactive_ingredient": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "inactive_ingredient",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.inactive_ingredient[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "inactive_ingredient[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.questions": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "questions",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.questions[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "questions[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.package_label_principal_display_panel": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "package_label_principal_display_panel",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.package_label_principal_display_panel[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "package_label_principal_display_panel[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.package_label_principal_display_panel[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "package_label_principal_display_panel[1]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.set_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "set_id",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "id",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.effective_time": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "effective_time",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.version": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "version",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.application_number": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.application_number",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.application_number[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.application_number[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.brand_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.brand_name",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.brand_name[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.brand_name[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.generic_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.generic_name",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.generic_name[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.generic_name[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.manufacturer_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.manufacturer_name",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.manufacturer_name[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.manufacturer_name[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.product_ndc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.product_ndc",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.product_ndc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.product_ndc[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.product_type": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.product_type",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.product_type[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.product_type[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.route": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.route",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.route[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.route[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.substance_name": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.substance_name",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.substance_name[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.substance_name[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.rxcui": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.rxcui",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.rxcui[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.rxcui[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.spl_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_id",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.spl_id[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_id[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.spl_set_id": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_set_id",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.spl_set_id[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.spl_set_id[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.package_ndc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.package_ndc",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.package_ndc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.package_ndc[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.is_original_packager": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.is_original_packager",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.is_original_packager[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.is_original_packager[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.upc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.upc",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.upc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.upc[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[1]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[2]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[2]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[3]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[3]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[4]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[4]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.nui[5]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.nui[5]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_moa": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_moa",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_moa[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_moa[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_pe": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_pe[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_pe[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_pe[1]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_cs": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_cs",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_cs[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_cs[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_epc": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_epc[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.pharm_class_epc[1]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.pharm_class_epc[1]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.unii": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.unii",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            },
+            "label.openfda.unii[0]": {
+              "provider": "openFDA",
+              "endpoint": "https://api.fda.gov/drug/label.json",
+              "sourceUrl": "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1",
+              "fieldPath": "openfda.unii[0]",
+              "recordId": "008ee85b-5cac-45a6-a857-a828f8125175",
+              "retrievedAt": "2026-11-17T13:53:15.839Z"
+            }
+          }
+        }
+      }
+    ],
+    "held": []
+  }
+}

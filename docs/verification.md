@@ -1,0 +1,42 @@
+# 실행 검증
+
+## 승인·환경
+
+- 승인 계획 SHA256: `96b92989d6018fbf96558adda8e1fae9888541abd3f75f3a047e72ea8fae01d1` (실제 파일 해시 일치 확인).
+- 로컬 경로: `C:/Users/DS/harness/pubchem-drug-explorer`.
+- Windows 11, Node.js 24.21.0, 실제 설치 Chrome 157.0.8103.79. 기존 사용자 프로필을 사용하거나 변경하지 않고 Playwright 격리 프로필로 실행.
+- 증거 JSON의 시각은 UTC 원자료입니다. 아래 사람이 읽는 시각은 UTC+09:00으로 표시합니다.
+
+## 실제 브라우저 / 실제 API
+
+2026-11-17 22:48~22:58 UTC+09:00에 로컬 HTTP origin에서 실행했습니다. [api-browser.json](evidence/api-browser.json), [live-app.json](evidence/live-app.json), [translation-browser.json](evidence/translation-browser.json)에는 정확한 관측 UTC 시각과 URL·응답이 있습니다. 단순 원시 HTTP 성공과 브라우저 fetch 성공을 구분하며 이번 증거는 Chrome 안의 fetch입니다.
+
+- PubChem aspirin CID2244, C9H8O4, 180.16; acetaminophen CID1983, C8H9NO2, 151.16; ibuprofen CID3672, C13H18O2, 206.28. 실제 API HTTP200.
+- PubChem UNII annotation·openFDA label·NDC 모두 브라우저 HTTP200.
+- 아스피린 실제 앱 첫 라벨 페이지: 13개 연결 제품, 7건 연결 보류. 전부 보류하거나 누락 처리한 구현이 아님.
+- 실제 양성: CID2244, FDA GSRS UNII `R16CO5Y76E`, NDC `59726-065`, 성분 ASPIRIN 81 mg/1, 제형 TABLET, COATED, 경로 ORAL.
+- NDC spl_id = label.id `008ee85b-5cac-45a6-a857-a828f8125175`; set_id `0058175f-3474-40c3-a046-6cfaec86d84b`.
+- 실제 선택키: `["59726-065","0058175f-3474-40c3-a046-6cfaec86d84b","008ee85b-5cac-45a6-a857-a828f8125175"]`.
+- 원자료 endpoint: `https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2244/JSON?heading=UNII`; `https://api.fda.gov/drug/ndc.json?search=product_ndc:%2259726-065%22&limit=1`; `https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%2259726-065%22&limit=1`.
+- 필드별 출처·조회 시각과 라벨 원자료 effective_time은 live-app.json에 별도로 보존되어 있습니다.
+
+## 실제 기본 Translator
+
+초기 Playwright 기본 옵션에서 모델 다운로드가 180초 안에 완료되지 않았습니다. 가짜 번역으로 우회하지 않았습니다. Playwright의 component-update/background-networking 비활성화 옵션을 제거한 격리 Chrome에서는 실제 모델 번역에 성공했습니다.
+
+- 아스피린 → Aspirin → PubChem CID2244.
+- 아세트아미노펜 → acetaminophen → CID1983.
+- 이부프로펜 → Ibuprofen → CID3672.
+- 선택한 실제 라벨의 `Cyclooxygenase Inhibitors [MoA]` → `시클로옥시게나제 억제제 [MOA]`.
+- 이 항목은 기전 **분류**이며 기전 설명이나 ADR로 표시하지 않습니다. 없는 ADR은 자료 없음입니다.
+- [실제 앱 화면](evidence/live-app.png), [실제 번역 화면](evidence/translation-browser.png).
+
+## Fixture와 모의 통합 검증 (실제 제공자 성공과 별개)
+
+`npm test`: 19/19 통과. 정확한 연결·순서 섞인 배열·두 실제 NDC만 생성·SPL/set 불일치·식별 누락·염·복합제 보류·동일 키 충돌·제형/경로 누락·완전 동일 중복·세대 취소·잘못된 CID·요청 중복/캐시·소비자별 취소·재시도/간격·Retry-After·404 오류코드·잘못된 JSON·네트워크·시간 초과를 검증했습니다.
+
+`node tests/browser.js`: 8개 브라우저 시나리오 통과. fixture 실행, 잘못된 CID, 번역 미지원 후 영문 유지, 한글 후보 수정/확인, 빠른 재검색, 상세 새로고침 확인, 악성 HTML textContent 처리, 공유 라벨의 A→B 전환 후 늦은 번역 차단. [자동화 기록](evidence/browser-adversarial.json), [화면](evidence/browser-adversarial.png). 이 suite의 번역은 의도적으로 모의이며 실제 번역 증거는 위에 따로 있습니다.
+
+## 게시 및 남은 검증
+
+Git credential helper의 기존 계정 인증이 확인되었습니다. 비밀값은 출력·저장하지 않았습니다. 공개 GitHub Pages의 생성·실행 결과와 최종 리뷰는 완료 후 이 절에 기록합니다. 로컬 성공만으로 공개 배포 성공을 주장하지 않습니다.
