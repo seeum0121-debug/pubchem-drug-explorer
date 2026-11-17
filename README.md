@@ -83,4 +83,6 @@ Chrome은 설치되어 있어야 합니다. 자동화는 격리 프로필만 사
 
 저장소 main 브랜치의 루트를 Pages 소스로 지정합니다. `index.html`, `detail.html`, `assets/`, `js/`가 정적 배포물이며 상대 경로로 저장소 하위 URL에서도 동작합니다. 비밀값이나 사용자 프로필을 업로드하지 마세요.
 
+이번 배포 후 공개 사이트에서 aspirin·acetaminophen·ibuprofen의 검색/제품 선택/실제 한국어 자동 번역을 재검증했습니다. `pages-probe` 재실행 **9단계 통과**, 페이지 오류 없음. 최초 실행은 번역 대기 시간 초과였으므로 모델 가용성은 여전히 제한입니다. 공개 검증은 영어 성분 검색을 사용하며 한글 검색 성공을 의미하지 않습니다.
+
 실행 증거와 한계: [docs/verification.md](docs/verification.md).

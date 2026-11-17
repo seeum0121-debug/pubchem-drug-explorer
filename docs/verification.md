@@ -9,6 +9,7 @@
 - `tools/translation-probe.js`: 전체 실패. 최초 실행과 재실행 모두 ko→en 모델 생성 거부를 관찰했습니다. 재실행은 검색 실패와 별도로 실제 aspirin 제품에서 en→ko 자동 번역 완료를 확인했습니다. 오류를 성공 처리하지 않습니다.
 - 실제 모델/실제 API의 최신 화면: [1280px](evidence/readability-desktop.png), [390px](evidence/readability-mobile.png). 좁은 화면의 가로 넘침 검사 통과. 번역문에 의학적 의미 왜곡이 있어 정확성 보장은 불가합니다.
 - 공식 URL 3개 재조회: e약은요 공개 4,730건/엑셀다운로드 표시, 공공데이터포털 무료이나 ServiceKey 필수, 자료실 응답에는 목록만 노출. XLSX 임상 본문·키 없는 자동 연동은 검증하지 못했습니다. 웹 열람권과 API 데이터 이용허락을 구분합니다.
+- 구현 커밋 `7da7f33`을 origin/main에 push하고 공개 JS 변경을 HTTP 200으로 확인했습니다. 최초 Pages 검증은 번역 대기 180초 초과. 실패 상태를 즉시 기록하고 제품 재선택을 한 번만 허용하도록 probe를 수정한 뒤 재실행은 재시도 분기 없이 세 성분 9단계 통과, pageerror 없음. [최신 공개 기록](evidence/pages.json)은 영어 검색→실제 제품→자동 en→ko 번역을 검증하며 한글 검색을 검증한 기록이 아닙니다.
 
 ## 승인·환경
 

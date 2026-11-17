@@ -19,7 +19,16 @@ try{
   await page.waitForFunction(()=>document.querySelector('#compound img')?.naturalWidth>0,{},{timeout:60000});
   await page.locator('#confirm-compound').click();await page.locator('#products button').first().waitFor({timeout:180000});await page.locator('#products button').first().click();
   const selectionKey=await page.locator('#label').getAttribute('data-selection-key');assert.equal(JSON.parse(selectionKey).length,3);
-  await page.waitForFunction(()=>document.querySelector('.translation-state')?.textContent==='한국어로 표시했습니다.',{},{timeout:180000});
+  const settled=()=>page.waitForFunction(()=>{
+   const state=document.querySelector('.translation-state');
+   return state?.textContent==='한국어로 표시했습니다.' || state?.classList.contains('error');
+  },{},{timeout:180000});
+  await settled();
+  if(await page.locator('.translation-state').evaluate(node=>node.classList.contains('error'))){
+   report.steps.push({action:'Initial automatic translation failure; retry by selecting product again',input:name,error:await page.locator('.translation-state').innerText(),verdict:'observed failure'});
+   await page.locator('#products button').first().click();await settled();
+  }
+  assert.equal(await page.locator('.translation-state').innerText(),'한국어로 표시했습니다.');
   assert.match(await page.locator('#label article h3').first().innerText(),/경고/);
   assert.equal(await page.locator('#label').getAttribute('aria-busy'),'false');
   assert.equal(await page.locator('#products [aria-pressed=true]').count(),1);
