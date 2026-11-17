@@ -54,3 +54,11 @@
 - R2: 추가 페이지 조회 실패 후 동일 offset을 재시도할 수 있으며 이전 제품/선택이 유지됩니다.
 - `node tests/image-browser.js`: 5개 추가 시나리오 통과. 실제 dispatch 이후 이미지 취소, 혼합 JSON/PNG 간격, 시간 초과, 디코딩 실패/URL 해제, 상세 확인 중 이미지 유지 및 페이지 offset 0→1(실패)→1(성공)을 검증했습니다. [기록](evidence/image-browser.json), [화면](evidence/image-browser.png).
 - 공개 세 성분 제품 선택 근거: aspirin NDC59726-065; acetaminophen NDC63941-519 / set_id0005aafa-08f8-4990-a54d-cc097195708f / label.id ee8e3aa2-8550-41c7-9911-0723b3fb2f87; ibuprofen NDC59779-438 / set_id00653b7c-7099-487e-9a01-e89781c21323 / label.id4bd1345d-d116-426e-825f-bbf29381746a. 정확한 제형·경로·성분/함량·원문·한국어 번역은 pages.json에 보존합니다.
+
+## 사용자 후속 변경 검증 (2026-11-17)
+
+한국어 중심 가독성, 제품 클릭 즉시 자동 번역, 하단 접힌 출처/원문, 실제 URL·기능·스크린샷 README를 반영했습니다. 식별 검증은 유지했습니다. `npm test` 29/29, 기존 browser 8, image-browser 5, auto-browser 3 시나리오 통과. auto-browser는 user activation 안의 create·동일 모델 promise 재사용·제품 전환·자동 다운로드 실패·원문 열람·재시도를 검증합니다.
+
+실제 Chrome 공개 Pages에서 세 성분 검색·구조·제품 선택·버튼 없는 자동 한국어 번역 완료를 재검증했습니다. pages.json의 9단계 모두 성공, pageerror 없음. 첫 번역 모델 생성이 일시적으로 거부된 별도 로컬 실행도 있었으며 재실행에서는 실제 번역 성공; 모델 가용성을 보장하지 않습니다. 최초 다운로드/실패 상태를 숨기지 않습니다. 스크린샷 pages-2244.png, pages-1983.png, pages-3672.png는 변경된 공개 레이아웃입니다.
+
+국내 공식 자료는 e약은요 공개 검색과 data.go.kr 15075057 공식 문서를 추가 2회 조회했습니다. 공개 검색 4730건/일반의약품 개요 범위 확인, API 무료이나 ServiceKey 필수 확인. 무키 자동 통합·재사용 권한·성분 대응까지 검증된 한국어 상세 자료는 확보하지 못했습니다. 앱은 공식 외부 검색 링크만 제공하며 미국 원자료 번역을 한국 원자료라고 표시하지 않습니다. 상세 조건은 README 표에 기록했습니다.
