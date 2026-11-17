@@ -15,7 +15,7 @@ const sections = [
   ['작용 기전 설명','mechanism_of_action'],
   ['작용 기전 분류','openfda.pharm_class_moa'],
   ['임상 약리 설명','clinical_pharmacology'],
-  ['약리 효과 분류 (설명 아님)','openfda.pharm_class_pe']
+  ['약리 효과 분류','openfda.pharm_class_pe']
 ];
 function source(parent,title,url) {if(url) parent.append(link(title,url));}
 function select(product) {
