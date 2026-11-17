@@ -33,10 +33,16 @@
 
 ## Fixture와 모의 통합 검증 (실제 제공자 성공과 별개)
 
-`npm test`: 19/19 통과. 정확한 연결·순서 섞인 배열·두 실제 NDC만 생성·SPL/set 불일치·식별 누락·염·복합제 보류·동일 키 충돌·제형/경로 누락·완전 동일 중복·세대 취소·잘못된 CID·요청 중복/캐시·소비자별 취소·재시도/간격·Retry-After·404 오류코드·잘못된 JSON·네트워크·시간 초과를 검증했습니다.
+`npm test`: 23/23 통과. 정확한 연결·순서 섞인 배열·두 실제 NDC만 생성·SPL/set 불일치·식별 누락·염·복합제 보류·동일 키 충돌·제형/경로 누락·완전 동일 중복·세대 취소·잘못된 CID·요청 중복/캐시·소비자별 취소·재시도/간격·Retry-After·404 오류코드·잘못된 JSON·네트워크·시간 초과를 검증했습니다.
 
 `node tests/browser.js`: 8개 브라우저 시나리오 통과. fixture 실행, 잘못된 CID, 번역 미지원 후 영문 유지, 한글 후보 수정/확인, 빠른 재검색, 상세 새로고침 확인, 악성 HTML textContent 처리, 공유 라벨의 A→B 전환 후 늦은 번역 차단. [자동화 기록](evidence/browser-adversarial.json), [화면](evidence/browser-adversarial.png). 이 suite의 번역은 의도적으로 모의이며 실제 번역 증거는 위에 따로 있습니다.
 
 ## 게시 및 남은 검증
 
-Git credential helper의 기존 계정 인증이 확인되었습니다. 비밀값은 출력·저장하지 않았습니다. 공개 GitHub Pages의 생성·실행 결과와 최종 리뷰는 완료 후 이 절에 기록합니다. 로컬 성공만으로 공개 배포 성공을 주장하지 않습니다.
+기존 Git credential helper 인증으로 공개 저장소와 Pages를 생성했습니다. 비밀값은 출력·저장하지 않았습니다.
+
+- 저장소: https://github.com/seeum0121-debug/pubchem-drug-explorer
+- 사이트: https://seeum0121-debug.github.io/pubchem-drug-explorer/
+- `node tools/pages-probe.js`: 공개 HTTPS 사이트에서 실제 Chrome 한글 3종 후보 번역→확인→PubChem 결과→각 화학 상세, 뒤로 가기, 직접 상세 접근/새로고침, 아스피린 제품/제형/경로/정확 라벨, en→ko 번역을 재실행했습니다. 7개 관측 단계 성공, pageerror 없음. [공개 사이트 자동화 기록](evidence/pages.json), [공개 사이트 화면](evidence/pages.png).
+- 새 계정·새 인증정보·유료 서비스 없이 기존 계정을 사용했습니다. Git 작성자 설정은 커밋 명령에만 적용했으며 전역 Git 설정을 변경하지 않았습니다.
+- 외부 제공자 데이터 및 Chrome 모델 가용성은 이후 바뀔 수 있습니다. 모든 의약품의 연결·번역 성공이나 의학적 정확성을 보장하지 않습니다.

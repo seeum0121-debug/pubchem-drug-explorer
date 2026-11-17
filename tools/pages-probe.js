@@ -1,0 +1,23 @@
+import {chromium} from '@playwright/test';
+import {writeFile} from 'node:fs/promises';
+const base='https://seeum0121-debug.github.io/pubchem-drug-explorer/';
+const browser=await chromium.launch({channel:'chrome',headless:true,ignoreDefaultArgs:['--disable-component-update','--disable-background-networking']});
+const page=await browser.newPage();
+const report={schemaVersion:1,kind:'browser-automation',browser:browser.version(),observedAt:new Date().toISOString(),base,steps:[],errors:[]};
+page.on('pageerror',e=>report.errors.push(e.message));
+try{
+ const response=await page.goto(base);if(response.status()!==200)throw new Error(`Pages HTTP ${response.status()}`);
+ for(const name of ['아스피린','아세트아미노펜','이부프로펜']){
+  await page.locator('#query').fill(name);await page.locator('#search-form button').click();await page.locator('#translation').waitFor({timeout:180000});
+  const candidate=await page.locator('#candidate').inputValue();await page.locator('#confirm-translation').click();await page.locator('#results .button').first().waitFor({timeout:60000});
+  report.steps.push({action:'Native Korean candidate and live PubChem confirmation',input:name,candidate,result:await page.locator('#results').innerText(),verdict:'passed'});
+  await page.locator('#results .button').first().click();await page.locator('#confirm-compound').waitFor({timeout:60000});report.steps.push({action:'Detailed chemical fields',input:name,result:await page.locator('#compound').innerText(),verdict:'passed'});await page.goBack();await page.locator('#query').waitFor();
+ }
+ await page.goto(base+'detail.html?cid=2244');await page.locator('#confirm-compound').waitFor({timeout:60000});await page.reload();await page.locator('#confirm-compound').waitFor({timeout:60000});
+ await page.locator('#confirm-compound').click();await page.locator('#products button').first().waitFor({timeout:180000});await page.locator('#products button').first().click();
+ await page.locator('#label button').first().click();await page.waitForFunction(()=>[...document.querySelectorAll('.translation-text')].some(x=>x.textContent.trim()),{},{timeout:180000});
+ report.steps.push({action:'Exact product/form/route/label plus native Korean label translation on HTTPS Pages',selectionKey:await page.locator('#label').getAttribute('data-selection-key'),result:await page.locator('#label').innerText(),verdict:'passed'});
+ await page.screenshot({path:'docs/evidence/pages.png',fullPage:true});
+ report.status=report.errors.length?'failed':'passed';
+}catch(error){report.status='failed';report.errors.push(error.message);process.exitCode=1;}
+await writeFile('docs/evidence/pages.json',JSON.stringify(report,null,2));console.log({status:report.status,steps:report.steps.map(x=>({action:x.action,input:x.input,selectionKey:x.selectionKey})),errors:report.errors});await browser.close();
